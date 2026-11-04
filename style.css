@@ -27,7 +27,7 @@ body {
 
 #noButton {
     transition: 0.5s;
-    
+
 }
 
 #yesBtn {
@@ -182,7 +182,7 @@ p a {
     padding: 30px;
 
     width: 90%;
-    max-width: 400px;
+    max-width: none;
     min-height: 0;
 
     margin: 20px auto;
@@ -201,7 +201,7 @@ p a {
     color: white;
     border: none;
     border-radius: 12px;
-    padding: 15px 32px;
+    padding: 15px 30px;
     font-weight: 600;
 }
 
@@ -346,112 +346,63 @@ p a {
     }
 }
 
-/* Mobile phones */
+/* Mobile phones - bigger content */
 @media screen and (max-width: 480px) {
 
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
     body {
-        min-height: 100vh;
-        min-height: 100dvh;
         padding: 15px 0;
     }
 
     .custom-card {
-        width: 94%;
-        max-width: 400px;
-        min-height: 0;
-        padding: 20px 15px;
+        width: 90%;
+        max-width: none;
+        padding: 25px 18px;
         margin: 10px auto;
-        border-radius: 18px;
     }
 
     .header_text {
-        font-size: 27px;
+        font-size: 32px;
         margin-top: 15px;
-        margin-bottom: 5px;
-        padding: 0 5px;
     }
 
     .text {
-        font-size: 18px;
-        margin-top: 12px;
-        padding: 0 5px;
-    }
-
-    .buttons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 15px auto;
+        font-size: 22px;
     }
 
     .btn,
     #yesBtn,
     #seeBtn {
-        padding: 12px 22px;
-        font-size: 15px;
+        padding: 16px 30px;
+        font-size: 18px;
+        min-height: 50px;
     }
 
     .gif_container img,
     .gif_container1 img {
-        width: 140px;
-        max-height: 140px;
-        margin: 15px auto;
+        width: 190px;
+        height: auto;
+        max-height: 190px;
     }
 
     .date-container,
     .time-container,
     .activity-container {
         width: 95%;
-        margin: 12px auto;
+        max-width: none;
     }
 
     .date-container label,
     .time-container label,
     .activity-container label {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     #datePicker,
     #timePicker,
     #activityPicker {
-        font-size: 15px;
-        padding: 10px;
-    }
-
-    .modal-content {
-        margin: 10px;
-        border-radius: 15px;
-    }
-
-    .modal-title {
-        font-size: 20px;
-    }
-
-    .modal-body h4 {
-        font-size: 19px;
-    }
-
-    .modal-body h5 {
-        font-size: 16px;
-    }
-
-    .modal-msg,
-    .date-msg {
-        font-size: 14px;
-    }
-
-    p {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    p a {
-        font-size: 16px;
+        font-size: 17px;
+        padding: 14px;
+        min-height: 50px;
     }
 }
 
@@ -481,63 +432,5 @@ p a {
     .gif_container1 img {
         width: 120px;
         max-height: 120px;
-    }
-}
-
-/* Bigger and more comfortable mobile design */
-@media screen and (max-width: 480px) {
-
-    .custom-card {
-        width: 95%;
-        padding: 25px 18px;
-    }
-
-    .header_text {
-        font-size: 32px;
-    }
-
-    .text {
-        font-size: 22px;
-    }
-
-    .btn,
-    #yesBtn,
-    #seeBtn {
-        padding: 16px 30px;
-        font-size: 18px;
-        min-height: 50px;
-    }
-
-    .gif_container img,
-    .gif_container1 img {
-        width: 190px;
-        height: 190px;
-    }
-
-    .date-container label,
-    .time-container label,
-    .activity-container label {
-        font-size: 19px;
-    }
-
-    #datePicker,
-    #timePicker,
-    #activityPicker {
-        font-size: 17px;
-        padding: 14px;
-        min-height: 50px;
-    }
-
-    .modal-title {
-        font-size: 24px;
-    }
-
-    .modal-body h4 {
-        font-size: 21px;
-    }
-
-    .modal-msg,
-    .date-msg {
-        font-size: 16px;
     }
 }
