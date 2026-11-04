@@ -1,0 +1,343 @@
+html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    background-color: rgb(246, 211, 217) !important;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(246, 211, 217);
+}
+
+#noButton {
+    position: absolute;
+    left: 70%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    /*margin-left: 150px;*/
+    transition: 0.5s;
+    /*margin-top: 50px;*/
+}
+
+#yesButton {
+    position: absolute;
+    left: 30%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    /*margin-right: 150px;
+    margin-top: 50px;*/
+
+}
+
+#yesBtn {
+    /*position: absolute;
+    margin-right: 150px;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    position: relative;
+    display: block;
+
+    margin: 25px auto 0;
+    padding: 15px 32px;
+    margin-bottom: 60px;
+
+    background-color: #FA2A55;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    box-shadow: 0 3px 3px black;
+    transition: background-color 0.3s ease;
+
+}
+
+#seeBtn:hover {
+    background-color: white;
+    color: #FA2A55;
+}
+
+#seeBtn {
+    /*position: absolute;
+    margin-right: 150px;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    position: relative;
+    display: block;
+
+    margin: 25px auto 0;
+    padding: 15px 32px;
+    margin-bottom: 60px;
+
+    background-color: #FA2A55;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    box-shadow: 0 3px 3px black;
+    transition: background-color 0.3s ease;
+
+}
+
+#yesBtn:hover {
+    background-color: white;
+    color: #FA2A55;
+}
+
+.header_text {
+    font-family: "Nunito";
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    color: #FA2A55;
+}
+
+
+.text {
+    font-family: "Nunito";
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #FA2A55;
+    color: white;
+    font-weight: 600;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 3px black;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #FA2A55;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    width: 100%;
+}
+
+.gif_container img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 100px;
+}
+
+.gif_container1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: white;
+    margin-left: 50%;
+}
+
+p a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.25;
+}
+
+.card {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card {
+    position: relative;
+    background-color: #f6bfc9;
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+
+    width: 90%;
+    max-width: 400px;
+    min-height: 600px;
+
+    margin: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Override Bootstrap button styles */
+.buttons .btn {
+    background-color: #FA2A55;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 32px;
+    font-weight: 600;
+}
+
+.buttons .btn:hover {
+    background-color: white;
+    color: #FA2A55;
+}
+
+.date-container, .time-container {
+    width: 80%;
+    max-width: 300px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.date-container label,
+.time-container label,
+.activity-container label {
+    display: block;
+    font-family: "Nunito";
+    font-size: 18px;
+    font-weight: bold;
+    color: #FA2A55;
+    margin-bottom: 10px;
+}
+
+#datePicker,
+#timePicker,
+#activityPicker {
+    text-align: center;
+    border: 2px solid #FA2A55;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 600;
+    color: #FA2A55;
+    cursor: pointer;
+    background-color: white;
+}
+
+#datePicker:focus,
+#timePicker:focus,
+#activityPicker:focus, {
+    box-shadow: 0 0 8px rgba(250, 42, 85, 0.3);
+    border-color: #FA2A55;
+}
+
+/* Calendar header */
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover {
+    background-color: #FA2A55 !important;
+    background-image: none !important;
+}
+
+/* Today's date */
+.datepicker table tr td.today {
+    background-color: #f6bfc9 !important;
+    background-image: none !important;
+}
+
+.modal-content {
+    background-color: #f6bfc9;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    font-family: "Nunito";
+}
+
+/*.modal-header {
+    justify-content: center;
+    border-bottom: none;
+}
+*/
+.modal-title {
+    color: #FA2A55;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.modal-body h4 {
+    color: #FA2A55;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.modal-body h5 {
+    color: #FA2A55;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/*.modal-body p {
+    color: white;
+    margin: 10px 0;
+}*/
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-msg {
+    color: #a70023;
+    font-size: 16px;
+    /*font-weight: bold;*/
+    text-align: center;
+    margin: 10px 0;
+}
+
+.date-msg {
+    color: #a70023;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+}
